@@ -1,6 +1,11 @@
 # moviepunk
 ## Screenshots
 ![demo1.png](login.png/)
+![demo1.png](screenshot.png/)
+![demo1.png](search.png/)
+![demo1.png](review.png/)
+![demo1.png](movie.png/)
+
 
 ## Introduction
  This is a flask web application that uses the movie database api to fetch movies.
