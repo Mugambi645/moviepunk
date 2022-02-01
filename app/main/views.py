@@ -5,9 +5,9 @@ from ..requests import getMovies, get_movie,search_movie
 from flask_login import login_required
 from .. import db,photos
 
-from ..models import Review,User,PhotoProfile
+from ..models import User,PhotoProfile
 from ..forms import ReviewForm,UpdateProfile
-from ..models import review
+from app import review
 from ..forms import ReviewForm
 Review = review.Review
 
