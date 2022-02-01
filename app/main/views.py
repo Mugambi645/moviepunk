@@ -7,6 +7,9 @@ from .. import db,photos
 
 from ..models import Review,User,PhotoProfile
 from ..forms import ReviewForm,UpdateProfile
+
+
+#app
 @main.route("/")
 def index():
     """
