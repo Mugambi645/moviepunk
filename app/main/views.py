@@ -7,7 +7,9 @@ from .. import db,photos
 
 from ..models import Review,User,PhotoProfile
 from ..forms import ReviewForm,UpdateProfile
-
+from ..models import review
+from ..forms import ReviewForm
+Review = review.Review
 
 #app
 @main.route("/")
@@ -73,8 +75,7 @@ def new_review(id):
         new_review = Review(movie.id,title,movie.poster,review)
     
         new_review.save_review()
-        if save_review():
-            print("okay")
+       
         return redirect(url_for('main.movie',id = movie.id))
 
     title = f'{movie.title} review'
